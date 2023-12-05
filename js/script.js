@@ -4,9 +4,9 @@ let header = `
 <nav>
     <ul>
         <li><a class="nav" href="index.html">Home</a></li>
-<!--    <li><a class="nav" href="catalogo.html">Noticias</a></li>  -->
         <li><a class="nav" href="sobrenosotros.html">Nosotros</a></li>
         <li><a class="nav" href="forms.html">Contacto</a></li>
+        <li><a class="nav" href="data.html">Data</a></li>
     </ul>
 </nav>
 <form class="buscar" action="https://www.google.com/search" method="GET" target="_blank">

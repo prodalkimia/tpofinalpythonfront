@@ -102,6 +102,15 @@ table {
     width: 60%;
 }
 
+table2 {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    }
+
 th {
     text-align: center;
     border: solid 1px black;
@@ -121,6 +130,12 @@ li {
 tr:nth-child(even) {
     background-color: #ebebeb;
 }
+
+.contenedor-centrado {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    }
 
 /* Encabezado, barra de navegación */
 #idheader {
@@ -178,9 +193,28 @@ a.nav:active {
     line-height: 1;
 }
 
+#bienvenida2 {
+    height: 25vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    line-height: 1;
+}
+
 .bienvenida-titulo {
     background-color: rgba(38, 36, 43, 0.5);
     color: var(--color-celeste-1);
+    padding: 1em;
+}
+
+.data-titulo {
+    background-color: rgba(38, 36, 43, 0.5);
+    color: var(--color-negro-1);
     padding: 1em;
 }
 
@@ -196,7 +230,7 @@ a.nav:active {
 }
 
 .contenedor-novedades h2 {
-    margin: 0.5em 0 0;
+    margin: 0.6em 0 0;
 }
 
 .contenedor-novedades h3 {
