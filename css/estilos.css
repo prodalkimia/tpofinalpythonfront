@@ -101,6 +101,13 @@ iframe {
     padding: 0 20%;
 }
 
+.lista {
+    display: grid;
+    box-align: items;
+    justify-content: center;
+    width: 100%;   
+}
+
 table {
     margin: 3.125em auto;
     background-color: white;
