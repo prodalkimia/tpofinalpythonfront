@@ -103,9 +103,9 @@ iframe {
 
 .lista {
     display: grid;
-    box-align: items;
-    justify-content: center;
+    align-items: center;
     width: 100%;   
+    grid-template-columns: auto;
 }
 
 table {
