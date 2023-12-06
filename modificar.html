@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tecnósfera</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="https://kit.fontawesome.com/56cde7d9be.js" crossorigin="anonymous"></script>
+        <link rel="shorcut icon" href="img/icono.png" type="image/x">
+</head>
+
+<body>
+    <header id="idheader"></header>
+    <h1>Modificar Usuarios de la BBDD</h1>
+    <div id="app">
+        <form @submit.prevent="obtenerUsuario">
+            <label for="codigo">Código:</label>
+            <input type="text" v-model="codigo" required><br>
+            <button type="submit">Modificar Usuario</button>
+            <a href="index.html">Menu principal</a>
+        </form>
+
+        <div v-if="mostrarDatosUsuario">
+            <h2>Datos del Usuario</h2>
+            <form @submit.prevent="guardarCambios">
+                <label for="nombreModificar">Nombre:</label>
+                <input type="text" id="nombreModificar" v-model="nombre" required><br>
+
+                <label for="apellidoModificar">Apellido:</label>
+                <input type="text" id="apellidoModificar" v-model="apellido" required><br>
+
+                <label for="mailModificar">Email:</label>
+                <input type="text" id="mailModificar" v-model="mail" required><br>
+
+                <label for="fechaModificar">Fecha nacimiento:</label>
+                <input type="text" id="fechaModificar" v-model="fecha_nac" required><br>
+
+                <label for="paisModificar">País:</label>
+                <input type="text" id="paisModificar" v-model="pais" required><br>
+
+                <label for="ciudadModificar">ciudad:</label>
+                <input type="text" id="ciudadModificar" v-model="ciudad" required><br>
+
+                <label for="tecnologiaModificar">Campo tecnológico:</label>
+                <input type="text" id="tecnologiaModificar" v-model="tecnologia" required><br>
+
+                <!-- <img v-if="imagen_url && !imagenSeleccionada" :src="'static/img/' + imagen_url" alt="Imagen del usuario" style = "max-width: 200px;"><br> -->
+                <img v-if="imagen_url && !imagenSeleccionada" :src="'https://www.pythonanywhere.com/user/PEU/files/home/PEU/mysite/static/img/' + imagen_url" alt="Imagen del usuario" style = "max-width: 200px;"><br>
+                <img v-if="imagenSeleccionada" :src="imagenUrlTemp" alt="Vista previa de la nueva imagen" style="max-width:200px;">
+
+                <label for="nuevaImagen">Nueva Imagen:</label>
+                <input type="file" id="nuevaImagen" @change="seleccionarImagen"><br>
+
+                <button type="submit">Guardar Cambios</button>
+                <a href="modificar.html">Cancelar</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="js/modificar.js"></script>
+
+    <footer id="idfooter"></footer>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
