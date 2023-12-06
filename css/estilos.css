@@ -137,6 +137,13 @@ tr:nth-child(even) {
     justify-content: center;
     }
 
+.contenedor-menu {
+    display: flex;
+    padding: 2.0em;
+    width: 100%;
+    justify-content: center;
+    }    
+
 /* Encabezado, barra de navegación */
 #idheader {
     display: grid;
