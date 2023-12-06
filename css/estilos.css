@@ -17,6 +17,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
 body {
     color: var(--color-negro);
     background-color: var(--color-blanco);
@@ -54,8 +56,13 @@ h3 {
 }
 
 .container-art {
-    max-width: 80vw;
+    max-width: 100vw;
     margin: 1.25em;
+}
+
+.modificar {
+    text-align: center;
+    padding-top: 1.0em;
 }
 
 .container-art h1,
@@ -143,6 +150,18 @@ tr:nth-child(even) {
     width: 100%;
     justify-content: center;
     }    
+
+.contenedor-menu button {
+    display: block;
+    color: var(--color-negro);
+    text-decoration: none;
+    border: 3px solid var(--color-azulverdo);
+    padding: 0.75em 1.5em;
+    border-radius: 1em;
+    box-shadow: 0.375em -0.375em 0.625em var(--color-azuloscuro);
+    background: linear-gradient(var(--color-celeste-1), var(--color-blanco));
+    }
+
 
 /* Encabezado, barra de navegación */
 #idheader {
@@ -433,6 +452,50 @@ a.novedades:active {
 .buscar>button:focus {
     outline: none;
     border: 3px solid var(--color-azulverdo);
+}
+
+.form-modificar {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+
+.form-modificar input[type="text"], input[type="number"], textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.form-modificar input[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+
+.form-modificar input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.form-modificar button{
+    padding: 8px;
+        margin: 4px;
+        background-color: black;
+        color: #ffffff;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+}
+
+.form-modificar button:hover {
+    background-color: gray;
 }
 
 /* Login, Contacto, Registro */

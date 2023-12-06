@@ -12,18 +12,18 @@
 
 <body>
     <header id="idheader"></header>
-    <h1>Modificar Usuarios de la BBDD</h1>
+    <h1 class="modificar">Modificar Usuarios de la BBDD</h1>
     <div id="app">
-        <form @submit.prevent="obtenerUsuario">
+        <form class="form-modificar" @submit.prevent="obtenerUsuario">
             <label for="codigo">Código:</label>
             <input type="text" v-model="codigo" required><br>
-            <button type="submit">Modificar Usuario</button>
-            <a href="data.html">Menu Data</a>
+            <button type="submit">Modificar Usuario</button>                                  
         </form>
 
+        
         <div v-if="mostrarDatosUsuario">
             <h2>Datos del Usuario</h2>
-            <form @submit.prevent="guardarCambios">
+            <form class="form-modificar" @submit.prevent="guardarCambios">
                 <label for="nombreModificar">Nombre:</label>
                 <input type="text" id="nombreModificar" v-model="nombre" required><br>
 
@@ -58,11 +58,17 @@
         </div>
     </div>
 
+    <div class="contenedor-menu">
+        <a class="novedades" href="data.html">Menu Data</a>
+    </div>
+    
+    
     <script src="https://unpkg.com/vue@next"></script>
     <script src="js/modificar.js"></script>
 
     <footer id="idfooter"></footer>
     <script src="js/script.js"></script>
+
 
 </body>
 </html>
