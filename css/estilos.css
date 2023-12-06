@@ -546,6 +546,36 @@ a.novedades:active {
     gap: 1em;
 }
 
+/* Catálogo */
+#catalogo table {
+    margin: 0 auto;
+    width: 1250px;
+}
+
+#catalogo img {
+    width: 100%;
+}
+
+#catalogo th, td {
+    padding: 16px;
+}
+
+#catalogo th {
+    background-color: var(--color-azulverdo);
+}
+
+#catalogo td {
+    background-color: var(--color-gris1);
+}
+
+#catalogo tr:nth-child(odd) td {
+    background-color: var(--color-celeste-2);
+}
+
+#catalogo tr:hover td {
+    background-color: var(--color-azulverdo);
+}
+
 /* Animar Ver Mas */
 @keyframes cambiarColor {
     from {
